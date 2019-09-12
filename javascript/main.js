@@ -14,19 +14,19 @@ var IntervalTimer = setInterval(function() {
     let days = Math.floor(TimeDifference / (1000 * 60 * 60 * 24));
 
 // fixing single digit outputs
-    function BaseTen(Number) {
+    function DoubleDigit(Number) {
         if (Number < 10) {
             return '0' + number;
         } else {
             return number;
         }
     }
-    
+
 // setting proper double digits 
-    seconds = doubleDigit(seconds);
-    minutes = doubleDigit(minutes);
-    hours = doubleDigit(hours);
-    days = doubleDigit(days);
+    seconds = DoubleDigit(seconds);
+    minutes = DoubleDigit(minutes);
+    hours = DoubleDigit(hours);
+    days = DoubleDigit(days);
 
     countdown.textContent = days + ':' + hours + ':' + minutes + ':' + seconds;
  
