@@ -9,9 +9,9 @@ var IntervalTimer = setInterval(function() {
 
 // converting milliseconds of TimeDifference into     
     let seconds = Math.floor((TimeDifference % (1000 * 60)) / 1000);
-    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let minutes = Math.floor((TimeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    let hours = Math.floor((TimeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let days = Math.floor(TimeDifference / (1000 * 60 * 60 * 24));
 
 // fixing single digit outputs
     function BaseTen(Number) {
@@ -21,6 +21,7 @@ var IntervalTimer = setInterval(function() {
             return number;
         }
     }
+    
 // setting proper double digits 
     seconds = doubleDigit(seconds);
     minutes = doubleDigit(minutes);
