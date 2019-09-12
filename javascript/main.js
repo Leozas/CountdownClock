@@ -16,9 +16,9 @@ var IntervalTimer = setInterval(function() {
 // fixing single digit outputs
     function DoubleDigit(Number) {
         if (Number < 10) {
-            return '0' + number;
+            return '0' + Number;
         } else {
-            return number;
+            return Number;
         }
     }
 
