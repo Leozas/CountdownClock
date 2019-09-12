@@ -31,7 +31,7 @@ var IntervalTimer = setInterval(function() {
     countdown.textContent = days + ':' + hours + ':' + minutes + ':' + seconds;
  
 // refreshing intervals    
-    if (timeDiff <= 0) {
+    if (TimeDifference <= 0) {
         clearInterval(timer);
     }
 }, 1000);
