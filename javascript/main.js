@@ -5,7 +5,7 @@ var IntervalTimer = setInterval(function() {
 //setting dates
     let TimeStart = new Date(Date.now()).getTime();
     let TimeEnd = new Date('September 16, 2019 ').getTime();
-    let TimeDifference = TimeStart - TimeEnd;
+    let TimeDifference = TimeEnd - TimeStart;
 
 // converting milliseconds of TimeDifference into     
     let seconds = Math.floor((TimeDifference % (1000 * 60)) / 1000);
