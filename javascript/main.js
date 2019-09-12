@@ -32,6 +32,6 @@ var IntervalTimer = setInterval(function() {
  
 // refreshing intervals    
     if (TimeDifference <= 0) {
-        clearInterval(timer);
+        clearInterval(IntervalTimer);
     }
 }, 1000);
