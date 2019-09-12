@@ -1,1 +1,0 @@
-let countdown = document.querySelector('.countdown');
