@@ -27,3 +27,7 @@ p{
     font-size: 2em;
 }
 
+.countdown{
+    font-family: 'Roboto Mono', monospace;
+    color: #32CD32
+}
